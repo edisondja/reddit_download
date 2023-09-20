@@ -5,7 +5,7 @@
 <strong>
   Remember install FFMPEG in your PC o Server
   
-</strong>
+</strong><hr/>
 
 <p>
   Reddit download is a simple library, to be able to download videos from reddit you only have to send the video to the object using the method getLinkVideo and then the method download
