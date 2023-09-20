@@ -9,7 +9,7 @@
  
     $Reddit_download->getVideoLink($url);
 
-    $save_as = "videos/cocodrilos.mp4";
+    $save_as = "videos/cocodrilos";
 
    if( $Reddit_download->download($save_as)){
 

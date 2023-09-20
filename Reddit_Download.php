@@ -31,14 +31,19 @@ class Reddit_Download
            return $src;
     }
 
-    public function download(string $save_as): bool
+    public function download(string $save_as, string $preset = 'fast', int $crf = 20): bool
     {
      
-        //       echo "$this->video_link";
+        // 
+        //      echo "$this->video_link";
+        $try_ffmpeg = trim(shell_exec('type -P ffmpeg'));
+        if (empty($try_ffmpeg)) {
+            throw new Exception("FFmpeg not found on your system");
+        }
 
-        $command = "ffmpeg -i '$this->video_link' {$save_as}.mp4";
+        $command = "ffmpeg -i $this->video_link -c:v libx264 -preset {$preset} -crf {$crf} -o $save_as.mp4";
         system($command);
-      
+
         return true;
     }
 
