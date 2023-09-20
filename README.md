@@ -13,7 +13,7 @@
 </p>
 
 <h3>Example</h3>
- <strong>Get Link video and downaloding</strong>
+ <strong>Get Link video and downaloding</strong><hr/>
 <code>
 
 
