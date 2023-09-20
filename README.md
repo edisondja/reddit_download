@@ -16,7 +16,7 @@
  <strong>Get Link video and downaloding</strong>
 <code>
 
-<?php
+
 
     require('Reddit_Download.php');
 
@@ -36,10 +36,6 @@
   
   
      }
-
-
-
-    ?>
 
 </code>
 
