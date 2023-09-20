@@ -1,0 +1,16 @@
+{
+    "name": "ediso/reddit_download",
+    "description": "Reddit Download",
+    "license": "GLP",
+    "autoload": {
+        "psr-4": {
+            "Ediso\\RedditDownload\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edison De Jesus Abreu"
+        }
+    ],
+    "require": {}
+}
